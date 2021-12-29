@@ -1,0 +1,11 @@
+[Unit]
+Description=ProtoStax LCD IP Display
+After=multi-user.target
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 lcd_ip.py
+WorkingDirectory=/home/pi/ProtoStax_RPi_LCD_Example
+Restart=always
+User=pi
+[Install]
+WantedBy=multi-user.target
